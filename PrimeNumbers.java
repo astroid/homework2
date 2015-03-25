@@ -25,13 +25,10 @@ public class PrimeNumbers {
 				} else
 					System.out.printf("%-10s", number);
 			}
-
-			// Checking Prime numbers for the next number
 			number++;
 		}
 	}
 
-	// Checking for PRIME Numbers
 	public static boolean isPrime(int number) {
 		for (int divisor = 2; divisor <= number / 2; divisor++) {
 			if (number % divisor == 0) {
@@ -39,6 +36,6 @@ public class PrimeNumbers {
 			}
 		}
 
-		return true; // Number is prime
+		return true; 
 	}
 }
